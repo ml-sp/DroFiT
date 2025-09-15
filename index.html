@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+		
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+        <meta name="description" content="DroNet Demos">
+        <meta name="author" content="ml-sp">
+
+	    <title>DroNet: Title </title>
+
+        <!-- Bootflat CSS -->
+        <link rel="stylesheet" href="css/bootflat.css">
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/index.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script><style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style>
+ <style id="MJX-CHTML-styles">
+     <style >
+     * {
+         box-sizing: border-box;
+         align-items: center;
+         justify-content: center;
+     }
+
+     .row {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: center;
+         padding: 0 4px;
+     }
+
+     /* Create two equal columns that sits next to each other */
+     .column {
+         flex: 50%;
+         padding: 0 4px;
+     }
+</style>
+<style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+_::-webkit-full-page-media, _:future, :root mjx-container {
+  will-change: opacity;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+</style></head>
+
+
+    <body>
+        <div id="top" style="position: relative; top: -100px;"></div>
+        <header id="header_navbar">
+		    <nav class="navbar navbar-default navbar-fixed-top fadeIn" role="navigation" style="opacity: 1;">
+                <div>
+                    <div class="navbar-header">
+					    <button type="button" class="navbar-toggle collapsed" id="button_navbar" data-toggle="collapse" data-target="#dropdown-box-1">
+						    <span class="sr-only">Toggle navigation</span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+					    </button>
+				    </div>
+
+    		        <div class="collapse navbar-collapse navbar-right" id="dropdown-box-1">
+	    			    <ul class="nav navbar-nav">
+		    			    <li><a href="https://ml-sp.github.io/DroNet/#intro_target">Overview</a></li>
+                            <li><a href="https://ml-sp.github.io/DroNet/#results_target">Results</a></li>
+			    			<li><a href="https://ml-sp.github.io/DroNet/#demos_target">Demos</a></li>
+				    		<li><a href="https://ml-sp.github.io/DroNet/#references_target">References</a></li>
+				    	</ul>
+			        </div>
+                </div>
+		    </nav>
+	    </header>
+
+		<div id="paper_info">
+			<div id="paper_title">
+    	        <h1>DroNet: Title</h1>
+                <p style="color:lightblue;font-size:18px;">Submitted as a contribution paper at ICASSP 2026 
+                    </p>
+
+			</div>
+		</div>
+
+	    
+<p>
+                    <div class="center">
+                        <div class="row">
+      
+                                <video width="640" height="480" controls>
+                                    <source src="videos/Submission_Final.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                    </div>
+                    </div>	    
+	    
+	    <hr>
+	    
+	    <div class="container">
+	           <p>
+		    <h3><a class="subtitle">[Video Demonstrations]</a></h3>
+                    <br>
+                    &ensp; Here are more video demonstrations for the system in practice which include indoor demonstrations of AoA estimation
+                    and Source Separation respectively. Detailed experiment setups will be discussed in later sections of the website.
+
+                    <br>
+                </p>
+	    </div>
+	  <hr>  
+
+	<table width="100%">
+		<tr>
+		<td align="center" valign="top" width="25%">
+                            <div class="column">
+                                <div class="center">
+                                    <b>3 Source AoA</b>
+                                </div>
+                                <video width="480" height="360" controls>
+                                    <source src="videos/K3IndoorAoA.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                            </div>
+		</td>
+		<td align="center" valign="top" width="25%">
+                            <div class="column">
+                                <div class="center">
+                                    <b>3 Source Separation</b>
+                                </div>
+                                <video width="480" height="360" controls>
+                                    <source src="videos/K3IndoorSS.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                            </div>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" valign="top" width="25%">
+                            <div class="column">
+                                <div class="center">
+                                    <b>4 Source AoA </b>
+                                </div>
+                                <video width="480" height="360" controls>
+                                    <source src="videos/K4AoAIndoor.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                            </div>
+			</td>
+			<td align="center" valign="top" width="25%">
+                             <div class="column">
+                                <div class="center">
+                                    <b>4 Source Separation</b>
+                                </div>
+                                <video width="480" height="360" controls>
+                                    <source src="videos/K4IndoorSS.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                            </div>
+			</td>
+		</tr>
+		</table>    
+	<hr>
+	   <div class="container">
+	           <p style="text-align:center">
+
+                    <h3> Please listen to our DroNet denoising audio demo results <a href="https://ml-sp.github.io/DroNet/#demos_target">here</a>  </h3>
+
+                </p>
+	    </div>
+	    
+        <div id="container">
+
+            <div id="intro_target" style="position: relative; top: -50px;"></div>
+	        <div id="intro">
+				<h2><a class="subtitle">Brief Overview</a></h2>
+            
+                
+
+
+                
+
+
+                <p> &ensp; We consider the single microphone denoising problem ...
+			<br>
+			&ensp; Note that, it is a challenging problem because mixing process is not linearly invertible
+			and source signals cannot be obtained by inverting mixting matrix even if we precisely know the mixing matrix. 
+			
+			<br>
+			 &ensp; In our work, we show that  <br>
+			
+			
+                    
+                    <a><img src="img/RoSS_concept.png" class="center"></a>
+     
+
+		</div>
+	
+		
+
+            <div id="demos_target" style="position: relative; top: -50px;"></div>
+            <div id="demos">
+                <h2><a class="subtitle">Audio Demo</a></h2>
+
+                <p align="justify">
+                    We show demo results in 3 different settings using a XXX mounted by ReSpeaker Microphone array [2].
+			For speech sources, we used YY dataset [3].
+			
+			<a><img src="img/Setting_table.png" class="center" style='height: 30%; width: 30%; object-fit: contain'></a>
+			<a><img src="img/Experiment_Pics_ICRA.png" class="center" style='height: 80%; width: 80%; object-fit: contain'></a>
+
+			
+                </p>
+
+<!--
+                <p>
+		    <h3><a class="subtitle">[Video Demonstrations]</a></h3>
+                    <br>
+                    &ensp; Here are video demonstrations for the system in practice. These are the indoor demonstrations of AoA estimation
+                    and Source Separation respectively. Detailed experiment setups will be discussed in later sections in this page.
+
+                    <br>
+                </p>
+                <p>
+                    <div class="center">
+                        <div class="row">
+                            <div class="column">
+                                <div class="center">
+                                    <b>3 Source AoA</b>
+                                </div>
+                                <video width="640" height="480" controls>
+                                    <source src="videos/K3IndoorAoA.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                            </div>
+                                <div class="column">
+                                    <div class="center">
+                                        <b>3 Source Separation</b>
+                                    </div>
+                                    <video width="640" height="480" controls>
+                                        <source src="videos/K3IndoorSS.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+
+                                </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="center">
+                        <div class="row">
+                            <div class="column">
+			        <div class="center">
+                                    <b>4 Source AoA</b>
+                                </div>
+                                <video width="640" height="480" controls>
+                                    <source src="videos/K4AoAIndoor.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                            </div>
+                            <div class="column">
+                                <div class="center">
+                                    <b>4 Source Separation</b>
+                                </div>
+                                <video width="640" height="480" controls>
+                                    <source src="videos/K4IndoorSS.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                            </div>
+                        </div>
+                    </div>
+</p> -->
+		<p>
+                        <br>
+                        &ensp; Here are separated results with audio samples for listening.
+
+                        <br>
+                </p>
+ 
+
+<!-- Simulation Started   -->
+	    
+
+			<p>
+			<h3><a class="subtitle">[Simulation Result]</a></h3>
+		    </p>
+                <h4><b><p style="color:red;font-size:18px;">Male Speaker with different SNR drone noise</p></b></h4>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Clean Speech</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <!-- <td rowspan="2">
+                                <b>A</b>
+                            </td> -->
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K3_0ms/Mixture.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">SNR [dB]</th>
+                            <th style="text-align:center;">Noisy Audio</th>
+                            <th style="text-align:center;">Denoised</th>                   
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>-5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K3_0ms/Ground_S1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K3_0ms/IVA_S1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K3_0ms/DUET_S1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-15</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K3_0ms/Ground_S2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K3_0ms/IVA_S2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-25</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K3_0ms/Ground_S3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K3_0ms/IVA_S3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>			
+                    </tbody>
+                </table>
+ <hr>
+                      <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Mixture (450ms Reverb Time)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <!-- <td rowspan="2">
+                                <b>A</b>
+                            </td> -->
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K3_450ms/Mixture.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+	
+<hr>
+                <h4><b><p style="color:red;font-size:18px;">Female Speak with Different SNR Drone Noise</p></b></h4>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Clean Speech</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <!-- <td rowspan="2">
+                                <b>A</b>
+                            </td> -->
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K4_450ms/Mixture.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">SNR [dB]</th>
+                            <th style="text-align:center;">Noisy Audio</th>
+                            <th style="text-align:center;">Denoised</th>    
+                         
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>-5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K4_450ms/Ground_S1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K4_450ms/IVA_S1_S3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-15</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K4_450ms/Ground_S2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K4_450ms/IVA_S2_S4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-25</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K4_450ms/Ground_S3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="result_data/Sim_offline_K4_450ms/IVA_S1_S3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+
+                        </tr>	
+                    </tbody>
+                </table>
+
+		     <hr>
+
+		
+		
+		
+	
+      <!--  Simulation finished -->
+
+
+<br>
+            </div>
+
+            <div id="references_target" style="position: relative; top: -50px;"></div>
+            <div id="references">
+                <h1><a class="subtitle">References</a></h1>
+                <p align="justify">
+		  [1] Shoji Makino, Shoko Araki, Stefan Winter, and Hiroshi
+Sawada, “Underdetermined blind source separation using
+acoustic arrays,” in Handbook on Array Processing
+and Sensor Networks. Wiley, 2009.   
+		 </p>    
+                <p align="justify">
+                    [2] T. Kim, H. T. Attias, S.-Y. Lee, and T.-W. Lee, “Blind source separation exploiting higher-order frequency dependencies,” IEEE Transactions on Audio, Speech, and Language Processing, vol. 15, no. 1, pp. 70–79, 2007.
+                </p>
+                <p align="justify">
+                    [3] O. Yilmaz, S. Richard. Blind Separation of Speech Mixtures via Time-Frequency Masking. In <i>IEEE Transactions on Signal Processing</i>. 2004.
+                </p>
+                <p align="justify">
+                    [4] H. Zen, V. Dang, R. Clark, Y. Zhang, R. J. Weiss, Y. Jia, Z. Chen, and Y. Wu, “Libritts: A corpus derived from librispeech for text-tospeech,” arXiv preprint arXiv:1904.02882, 2019.
+                </p>
+		<p align="justify">
+		    [5] “Respeaker 6 mic circular array kit for raspberry pi.” [Online]. Available: https://wiki.seeedstudio.com/.
+		 </p>
+	    </div>
+
+        </div>
+
+
+
+        <div id="footer">
+            <i>© Sep 2025 </i>
+		</div>
+
+        <div class="wow fadeIn" data-wow-delay="0.4s" style="visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;">
+	        <div class="btn-circle-scroll">
+			    <a href="https://ml-sp.github.io/DroNet/#top" class="btn-circle">
+				    <i class="fa fa-angle-double-up"></i>
+				</a>
+			</div>
+		</div>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    	<script src="js/jquery.easing.min.js"></script>
+	    <script src="js/jquery.scrollTo.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/buffer-loader.js"></script>
+        <script src="js/crossfade.js"></script>
+        <script src="js/crossfade_mono.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/polyfill.min.js"></script>
+        <script id="MathJax-script" async="" src="js/tex-mml-chtml.js"></script>
+
+        <script type="text/javascript">
+            $(function(){
+                $("ul li a").click(function(){
+                    var hr = $(this).attr("href");
+                    var anh = $(hr).offset().top;
+                    $("html,body").stop().animate({scrollTop:anh}, 1000);
+                })
+            })
+        </script>
+
+        <script type="text/javascript">
+            (function($) {
+        	    new WOW().init();
+
+	            jQuery(window).load(function() {
+		            jQuery("#preloader").delay(100).fadeOut("slow");
+		            jQuery("#load").delay(100).fadeOut("slow");
+	            });
+
+            	//jQuery to collapse the navbar on scroll
+	            $(window).scroll(function() {
+	        	    if ($(".navbar").offset().top > 50) {
+			            $(".navbar-fixed-top").addClass("top-nav-collapse");
+		            } else {
+			            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+	            	}
+            	});
+            })(jQuery);
+        </script>
+
+        <script type="text/javascript">
+            $(document).on("scroll",function(){
+	            if($(document).scrollTop() > 50){
+		            $(".navbar").stop().animate({
+                        opacity: '0.7'
+		            });
+	            }else{
+		            $(".navbar").stop().animate({
+                        opacity:'1.0'
+		            });
+	            }
+            });
+        </script>
+
+        <script type="text/javascript">
+        	//jQuery for page scrolling feature - requires jQuery Easing plugin
+	        $(function() {
+		        $('.btn-circle-scroll a').bind('click', function(event) {
+			        var $anchor = $(this);
+			        $('html, body').stop().animate({
+			           scrollTop: $($anchor.attr('href')).offset().top
+			           }, 1500, 'easeInOutExpo');
+		    	    event.preventDefault();
+		        });
+	        });
+        </script>
+
+    
+
+<!-- <div id="diigo-video-capture" style="display: none;"><div id="diigo-video-capture-container"><div id="diigo-video-capture-logo"></div>Capture</div></div><div id="diigo-video-capture-wrapper"><div id="diigo-video-capture-wrapper-tip">Drag to outliner or <span id="diigo-video-capture-upload">Upload</span></div><div id="diigo-video-capture-wrapper-close">Close</div></div><div id="diigo-chrome-installed" style="display: none;"></div><div class="jvectormap-tip"></div></body></html> -->
+        </html>
