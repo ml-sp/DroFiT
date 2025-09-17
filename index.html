@@ -4,10 +4,10 @@
 		
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-        <meta name="description" content="DroNet Demos">
+        <meta name="description" content="DroFiT Demos">
         <meta name="author" content="ml-sp">
 
-	    <title>DroNet: Title </title>
+	    <title>DROFIT: </title>
 
         <!-- Bootflat CSS -->
         <link rel="stylesheet" href="css/bootflat.css">
@@ -452,10 +452,10 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 
     		        <div class="collapse navbar-collapse navbar-right" id="dropdown-box-1">
 	    			    <ul class="nav navbar-nav">
-		    			    <li><a href="https://ml-sp.github.io/DroNet/#intro_target">Overview</a></li>
-                            <li><a href="https://ml-sp.github.io/DroNet/#results_target">Results</a></li>
-			    			<li><a href="https://ml-sp.github.io/DroNet/#demos_target">Demos</a></li>
-				    		<li><a href="https://ml-sp.github.io/DroNet/#references_target">References</a></li>
+		    			    <li><a href="https://ml-sp.github.io/DroFiT/#intro_target">Overview</a></li>
+                            <li><a href="https://ml-sp.github.io/DroFiT/#results_target">Results</a></li>
+			    			<li><a href="https://ml-sp.github.io/DroFiT/#demos_target">Demos</a></li>
+				    		<li><a href="https://ml-sp.github.io/DroFiT/#references_target">References</a></li>
 				    	</ul>
 			        </div>
                 </div>
@@ -464,7 +464,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 
 		<div id="paper_info">
 			<div id="paper_title">
-    	        <h1>DroNet: Title</h1>
+    	        <h1>DroFiT: Title</h1>
                 <p style="color:lightblue;font-size:18px;">Submitted as a contribution paper at ICASSP 2026 
                     </p>
 
@@ -476,9 +476,61 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
     	  
 	    <hr>
 	    
+	   <div class="container">
+	           <p style="text-align:center">
+
+                    <h3> Please listen to our DroFiT denoising audio demo results <a href="https://ml-sp.github.io/DroFiT/#demos_target">here</a>  </h3>
+
+                </p>
+	    </div>
+	    
+        <div id="container">
+
+            <div id="intro_target" style="position: relative; top: -50px;"></div>
+	        <div id="intro">
+				<h2><a class="subtitle">Brief Overview</a></h2>
+            
+                
+
+
+                
+
+
+                <p> &ensp; We consider the single microphone denoising problem ...
+			<br>
+			&ensp; Note that, it is a challenging problem because mixing process is not linearly invertible
+			and source signals cannot be obtained by inverting mixting matrix even if we precisely know the mixing matrix. 
+			
+			<br>
+			 &ensp; In our work, we show that  <br>
+			
+			
+                    
+                    <a><img src="img/RoSS_concept.png" class="center"></a>
+     
+
+		</div>
+	
+		
+
+            <div id="demos_target" style="position: relative; top: -50px;"></div>
+            <div id="demos">
+                <h2><a class="subtitle">Overview</a></h2>
+
+                <p align="justify">
+                    We show speech enhancement demo results in 3 different UAV(Drone) noise SNR settings {-5, -15, -25}dB. 
+					For Drone, DJI Flip UAV [1] is used to generate noise. 
+					For speech dataset, clean utterances from the VoiceBank-DEMAND [3] corpus (derived from VoiceBank/VCTK [4]).
+			
+			<a><img src="img/Setting_table.png" class="center" style='height: 30%; width: 30%; object-fit: contain'></a>
+			<a><img src="img/Experiment_Pics_ICRA.png" class="center" style='height: 80%; width: 80%; object-fit: contain'></a>
+
+			
+                </p>
+<!-- Drone Noise Video Started   -->
 	    <div class="container">
 	           <p>
-		    <h3><a class="subtitle">[Drone Noise Recording]</a></h3>
+		    <h3><a class="subtitle">Drone Noise Recording</a></h3>
                     <br>
                     &ensp; Here are more videos of drone generating noises.
                     <br>
@@ -541,158 +593,24 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 		</tr>
 		</table>    
 	<hr>
-	   <div class="container">
-	           <p style="text-align:center">
-
-                    <h3> Please listen to our DroNet denoising audio demo results <a href="https://ml-sp.github.io/DroNet/#demos_target">here</a>  </h3>
-
+<!--Video Ended   -->
+				
+	    <div class="container">
+	           <p>
+		   			 <h3><a class="subtitle">Audio Demo</a></h3>
                 </p>
 	    </div>
-	    
-        <div id="container">
-
-            <div id="intro_target" style="position: relative; top: -50px;"></div>
-	        <div id="intro">
-				<h2><a class="subtitle">Brief Overview</a></h2>
-            
-                
-
-
-                
-
-
-                <p> &ensp; We consider the single microphone denoising problem ...
-			<br>
-			&ensp; Note that, it is a challenging problem because mixing process is not linearly invertible
-			and source signals cannot be obtained by inverting mixting matrix even if we precisely know the mixing matrix. 
-			
-			<br>
-			 &ensp; In our work, we show that  <br>
-			
-			
-                    
-                    <a><img src="img/RoSS_concept.png" class="center"></a>
-     
-
-		</div>
-	
-		
-
-            <div id="demos_target" style="position: relative; top: -50px;"></div>
-            <div id="demos">
-                <h2><a class="subtitle">Audio Demo</a></h2>
-
-                <p align="justify">
-                    We show demo results in 3 different settings using a XXX mounted by ReSpeaker Microphone array [2].
-			For speech sources, we used YY dataset [3].
-			
-			<a><img src="img/Setting_table.png" class="center" style='height: 30%; width: 30%; object-fit: contain'></a>
-			<a><img src="img/Experiment_Pics_ICRA.png" class="center" style='height: 80%; width: 80%; object-fit: contain'></a>
-
-			
-                </p>
-
-<!--
-                <p>
-		    <h3><a class="subtitle">[Video Demonstrations]</a></h3>
-                    <br>
-                    &ensp; Here are video demonstrations for the system in practice. These are the indoor demonstrations of AoA estimation
-                    and Source Separation respectively. Detailed experiment setups will be discussed in later sections in this page.
-
-                    <br>
-                </p>
-                <p>
-                    <div class="center">
-                        <div class="row">
-                            <div class="column">
-                                <div class="center">
-                                    <b>3 Source AoA</b>
-                                </div>
-                                <video width="640" height="480" controls>
-                                    <source src="videos/K3IndoorAoA.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-
-                            </div>
-                                <div class="column">
-                                    <div class="center">
-                                        <b>3 Source Separation</b>
-                                    </div>
-                                    <video width="640" height="480" controls>
-                                        <source src="videos/K3IndoorSS.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-
-                                </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="center">
-                        <div class="row">
-                            <div class="column">
-			        <div class="center">
-                                    <b>4 Source AoA</b>
-                                </div>
-                                <video width="640" height="480" controls>
-                                    <source src="videos/K4AoAIndoor.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-
-                            </div>
-                            <div class="column">
-                                <div class="center">
-                                    <b>4 Source Separation</b>
-                                </div>
-                                <video width="640" height="480" controls>
-                                    <source src="videos/K4IndoorSS.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-
-                            </div>
-                        </div>
-                    </div>
-</p> -->
-		<p>
-                        <br>
-                        &ensp; Here are separated results with audio samples for listening.
-
-                        <br>
-                </p>
  
 
 <!-- Simulation Started   -->
 	    
-                <h4><b><p style="color:red;font-size:18px;">Male Speaker with different SNR drone noise</p></b></h4>
-                <table class="audio_demos">
-                    <thead>
-                        <tr>
-                            <th style="text-align:center;">Clean Speech</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr style="border-top:1px solid black">
-                            <!-- <td rowspan="2">
-                                <b>A</b>
-                            </td> -->
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="result_data/Sim_offline_K3_0ms/Mixture.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            
-                        </tr>
-
-                    </tbody>
-                </table>
-
-
+                <h4><b><p style="color:red;font-size:18px;">[Female Speaker 1]</p></b></h4>
                 <table class="audio_demos">
                     <thead>
                         <tr>
                             <th style="text-align:center;">SNR [dB]</th>
                             <th style="text-align:center;">Noisy Audio</th>
-                            <th style="text-align:center;">Denoised</th>                   
+                            <th style="text-align:center;">DroFiT</th>                   
                         </tr>
                     </thead>
 
@@ -703,12 +621,12 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             </td>
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="result_data/Sim_offline_K3_0ms/Ground_S1.wav" type="audio/wav">
+                                    <source src="audio_files/NoisyAudio/female1/female1_m5_3_denoised.wav" type="audio/wav">
                                 </audio>
                             </td>
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="result_data/Sim_offline_K3_0ms/IVA_S1.wav" type="audio/wav">
+                                    <source src="audio_files/DroFiT_output/female1/female1_m5_3_denoised.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -718,12 +636,12 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             </td>
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="result_data/Sim_offline_K3_0ms/Ground_S2.wav" type="audio/wav">
+                                    <source src="audio_files/NoisyAudio/female1/female1_m15_3_denoised.wav" type="audio/wav">
                                 </audio>
                             </td>
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="result_data/Sim_offline_K3_0ms/IVA_S2.wav" type="audio/wav">
+                                    <source src="audio_files/DroFiT_output/female1/female1_m15_3_denoised.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -733,76 +651,24 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             </td>
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="result_data/Sim_offline_K3_0ms/Ground_S3.wav" type="audio/wav">
+                                    <source src="audio_files/NoisyAudio/female1/female1_m25_3_denoised.wav" type="audio/wav">
                                 </audio>
                             </td>
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="result_data/Sim_offline_K3_0ms/IVA_S3.wav" type="audio/wav">
+                                    <source src="audio_files/DroFiT_output/female1/female1_m25_3_denoised.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>			
                     </tbody>
                 </table>
  <hr>
-                      <table class="audio_demos">
-                    <thead>
-                        <tr>
-                            <th style="text-align:center;">Mixture (450ms Reverb Time)</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr style="border-top:1px solid black">
-                            <!-- <td rowspan="2">
-                                <b>A</b>
-                            </td> -->
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="result_data/Sim_offline_K3_450ms/Mixture.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            
-                        </tr>
-
-                    </tbody>
-                </table>
-
-
-	
-<hr>
-                <h4><b><p style="color:red;font-size:18px;">Female Speak with Different SNR Drone Noise</p></b></h4>
-                <table class="audio_demos">
-                    <thead>
-                        <tr>
-                            <th style="text-align:center;">Clean Speech</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr style="border-top:1px solid black">
-                            <!-- <td rowspan="2">
-                                <b>A</b>
-                            </td> -->
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="result_data/Sim_offline_K4_450ms/Mixture.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            
-                        </tr>
-
-                    </tbody>
-                </table>
-
-
                 <table class="audio_demos">
                     <thead>
                         <tr>
                             <th style="text-align:center;">SNR [dB]</th>
                             <th style="text-align:center;">Noisy Audio</th>
-                            <th style="text-align:center;">Denoised</th>    
-                         
+                            <th style="text-align:center;">DroFiT</th>                   
                         </tr>
                     </thead>
 
@@ -813,15 +679,14 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             </td>
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="result_data/Sim_offline_K4_450ms/Ground_S1.wav" type="audio/wav">
+                                    <source src="audio_files/NoisyAudio/female1/female1_m5_2_denoised.wav" type="audio/wav">
                                 </audio>
                             </td>
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="result_data/Sim_offline_K4_450ms/IVA_S1_S3.wav" type="audio/wav">
+                                    <source src="audio_files/DroFiT_output/female1/female1_m5_2_denoised.wav" type="audio/wav">
                                 </audio>
                             </td>
-
                         </tr>
 			<tr style="border-top:1px solid black">
                             <td>
@@ -829,15 +694,14 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             </td>
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="result_data/Sim_offline_K4_450ms/Ground_S2.wav" type="audio/wav">
+                                    <source src="audio_files/NoisyAudio/female1/female1_m15_2_denoised.wav" type="audio/wav">
                                 </audio>
                             </td>
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="result_data/Sim_offline_K4_450ms/IVA_S2_S4.wav" type="audio/wav">
+                                    <source src="audio_files/DroFiT_output/female1/female1_m15_2_denoised.wav" type="audio/wav">
                                 </audio>
                             </td>
-
                         </tr>
 			<tr style="border-top:1px solid black">
                             <td>
@@ -845,22 +709,377 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             </td>
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="result_data/Sim_offline_K4_450ms/Ground_S3.wav" type="audio/wav">
+                                    <source src="audio_files/NoisyAudio/female1/female1_m25_2_denoised.wav" type="audio/wav">
                                 </audio>
                             </td>
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="result_data/Sim_offline_K4_450ms/IVA_S1_S3.wav" type="audio/wav">
+                                    <source src="audio_files/DroFiT_output/female1/female1_m25_2_denoised.wav" type="audio/wav">
                                 </audio>
                             </td>
-
-                        </tr>	
+                        </tr>			
                     </tbody>
                 </table>
 
+
+	
+<hr>
+                <h4><b><p style="color:red;font-size:18px;">[Male Speaker 1]</p></b></h4>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">SNR [dB]</th>
+                            <th style="text-align:center;">Noisy Audio</th>
+                            <th style="text-align:center;">DroFiT</th>                   
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>-5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/male1/male1_m5_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/male1/male1_m5_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-15</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/male1/male1_m15_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/male1/male1_m15_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-25</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/male1/male1_m25_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/male1/male1_m25_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>			
+                    </tbody>
+                </table>
+ <hr>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">SNR [dB]</th>
+                            <th style="text-align:center;">Noisy Audio</th>
+                            <th style="text-align:center;">DroFiT</th>                   
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>-5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/male1/male1_m5_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/male1/male1_m5_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-15</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/male1/male1_m15_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/male1/male1_m15_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-25</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/male1/male1_m25_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/male1/male1_m25_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>			
+                    </tbody>
+                </table>
+
+
 		     <hr>
 
-		
+                <h4><b><p style="color:red;font-size:18px;">[Female Speaker 2]</p></b></h4>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">SNR [dB]</th>
+                            <th style="text-align:center;">Noisy Audio</th>
+                            <th style="text-align:center;">DroFiT</th>                   
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>-5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/female2/female2_m5_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/female2/female2_m5_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-15</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/female2/female2_m15_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/female2/female2_m15_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-25</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/female2/female2_m25_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/female2/female2_m25_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>			
+                    </tbody>
+                </table>
+ <hr>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">SNR [dB]</th>
+                            <th style="text-align:center;">Noisy Audio</th>
+                            <th style="text-align:center;">DroFiT</th>                   
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>-5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/female2/female2_m5_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/female2/female2_m5_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-15</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/female2/female2_m15_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/female2/female2_m15_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-25</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/female2/female2_m25_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/female2/female2_m25_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>			
+                    </tbody>
+                </table>
+
+
+	
+<hr>
+                <h4><b><p style="color:red;font-size:18px;">[Male Speaker 2]</p></b></h4>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">SNR [dB]</th>
+                            <th style="text-align:center;">Noisy Audio</th>
+                            <th style="text-align:center;">DroFiT</th>                   
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>-5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/male2/male2_m5_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/male2/male2_m5_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-15</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/male2/male2_m15_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/male2/male2_m15_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-25</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/male2/male2_m25_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/male2/male2_m25_3_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>			
+                    </tbody>
+                </table>
+ <hr>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">SNR [dB]</th>
+                            <th style="text-align:center;">Noisy Audio</th>
+                            <th style="text-align:center;">DroFiT</th>                   
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>-5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/male2/male2_m5_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/male2/male2_m5_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-15</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/male2/male2_m15_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/male2/male2_m15_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+			<tr style="border-top:1px solid black">
+                            <td>
+                                <b>-25</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/NoisyAudio/male2/male2_m25_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="audio_files/DroFiT_output/male2/male2_m25_2_denoised.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>			
+                    </tbody>
+                </table>
 		
 		
 	
@@ -874,23 +1093,20 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
             <div id="references">
                 <h1><a class="subtitle">References</a></h1>
                 <p align="justify">
-		  [1] Shoji Makino, Shoko Araki, Stefan Winter, and Hiroshi
-Sawada, “Underdetermined blind source separation using
-acoustic arrays,” in Handbook on Array Processing
-and Sensor Networks. Wiley, 2009.   
-		 </p>    
+				    [1] DJI Flip UAV
+				</p>    
                 <p align="justify">
-                    [2] T. Kim, H. T. Attias, S.-Y. Lee, and T.-W. Lee, “Blind source separation exploiting higher-order frequency dependencies,” IEEE Transactions on Audio, Speech, and Language Processing, vol. 15, no. 1, pp. 70–79, 2007.
+                    [2] C. Valentini-Botinhao, X. Wang, S. Takaki, and J. Yamagishi, “Noisy speech database for training speech enhancement algorithms and TTS models,” dataset, 2017. 
                 </p>
                 <p align="justify">
-                    [3] O. Yilmaz, S. Richard. Blind Separation of Speech Mixtures via Time-Frequency Masking. In <i>IEEE Transactions on Signal Processing</i>. 2004.
+                    [3] J. Yamagishi, C. Veaux, and K. MacDonald, “CSTR VCTK Corpus: English multi-speaker corpus for CSTR voice cloning toolkit,” dataset, 2019. 
                 </p>
                 <p align="justify">
-                    [4] H. Zen, V. Dang, R. Clark, Y. Zhang, R. J. Weiss, Y. Jia, Z. Chen, and Y. Wu, “Libritts: A corpus derived from librispeech for text-tospeech,” arXiv preprint arXiv:1904.02882, 2019.
+                    [4] Z. W. Tan, and A. W. H. Khong, “SMoLnet-T: An efficient complex-spectral mapping speech enhancement approach with frame-wise CNN and spectral combination transformer for drone audition,”  Proc. APSIPA ASC, 2024. 
                 </p>
-		<p align="justify">
-		    [5] “Respeaker 6 mic circular array kit for raspberry pi.” [Online]. Available: https://wiki.seeedstudio.com/.
-		 </p>
+                <p align="justify">
+                    [5] H. S. Choi, et al., “Phase-aware speech enhancement with deep complex U-Net,” in Proc. Int. Conf. Learning Representations, 2019.
+				</p>		
 	    </div>
 
         </div>
@@ -903,7 +1119,7 @@ and Sensor Networks. Wiley, 2009.
 
         <div class="wow fadeIn" data-wow-delay="0.4s" style="visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;">
 	        <div class="btn-circle-scroll">
-			    <a href="https://ml-sp.github.io/DroNet/#top" class="btn-circle">
+			    <a href="https://ml-sp.github.io/DroFiT/#top" class="btn-circle">
 				    <i class="fa fa-angle-double-up"></i>
 				</a>
 			</div>
