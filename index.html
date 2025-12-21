@@ -478,6 +478,20 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 	.paper-table .section-divider td {
   border-top: 1.5px solid #000;
 }
+
+.paper-table thead th {
+  text-align: center;
+  padding: 10px 8px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-weight: 600;
+}
+
+.paper-table td[rowspan] {
+  vertical-align: middle;
+}
+
+	
 </style>
 
 	
@@ -618,69 +632,61 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 				    For transformer and TCN block parameters and values used for test & demo, please see the table below.
 				  </p>
 				
-						<table class="paper-table">
-						  <caption>Model hyperparameter configuration.</caption>
-						
-						  <thead>
-						    <tr>
-						      <th>Module</th>
-						      <th>Hyperparameter</th>
-						      <th>Value</th>
-						      <th>Description</th>
-						    </tr>
-						  </thead>
-						
-						  <tbody>
-						    <!-- Transformer block -->
-						    <tr>
-						      <td rowspan="4">Transformer<br>(MHA)</td>
-						      <td>Model Dim</td>
-						      <td>32</td>
-						      <td></td>
-						    </tr>
-						    <tr>
-						      <td># of Heads</td>
-						      <td>16</td>
-						      <td></td>
-						    </tr>
-						    <tr>
-						      <td># of Layers</td>
-						      <td>4</td>
-						      <td></td>
-						    </tr>
-						    <tr>
-						      <td>FFN Dim</td>
-						      <td>128</td>
-						      <td></td>
-						    </tr>
-						
-						    <!-- Separator between modules -->
-						    <tr class="section-divider">
-						      <td rowspan="4">TCN Block</td>
-						      <td>Kernel size</td>
-						      <td>3</td>
-						      <td></td>
-						    </tr>
-						    <tr>
-						      <td># of Layers</td>
-						      <td>3</td>
-						      <td></td>
-						    </tr>
-						    <tr>
-						      <td>Look-ahead</td>
-						      <td>200 ms</td>
-						      <td></td>
-						    </tr>
-						    <tr>
-						      <td>Receptive field</td>
-						      <td>15</td>
-						      <td></td>
-						    </tr>
-						  </tbody>
-						</table>
+					<table class="paper-table">
+					  <caption>Model hyperparameter configuration.</caption>
+					
+					  <thead>
+					    <tr>
+					      <th>Module</th>
+					      <th>Hyperparameter</th>
+					      <th>Value</th>
+					      <th>Description</th>
+					    </tr>
+					  </thead>
+					
+					  <tbody>
+					    <!-- Transformer block -->
+					    <tr>
+					      <td rowspan="4">Transformer<br>(MHA)</td>
+					      <td>Model Dim</td>
+					      <td>32</td>
+					      <td rowspan="4">Along Frequency Axis</td>
+					    </tr>
+					    <tr>
+					      <td># of Heads</td>
+					      <td>16</td>
+					    </tr>
+					    <tr>
+					      <td># of Layers</td>
+					      <td>4</td>
+					    </tr>
+					    <tr>
+					      <td>FFN Dim</td>
+					      <td>128</td>
+					    </tr>
+					
+					    <!-- Separator between modules -->
+					    <tr class="section-divider">
+					      <td rowspan="4">TCN Block</td>
+					      <td>Kernel size</td>
+					      <td>3</td>
+					      <td rowspan="4">Along Time Axis</td>
+					    </tr>
+					    <tr>
+					      <td># of Layers</td>
+					      <td>3</td>
+					    </tr>
+					    <tr>
+					      <td>Look-ahead</td>
+					      <td>200 ms</td>
+					    </tr>
+					    <tr>
+					      <td>Receptive field</td>
+					      <td>15</td>
+					    </tr>
+					  </tbody>
+					</table>
 
-
-				
 			</div>
 
 		<hr>
