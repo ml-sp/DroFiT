@@ -435,6 +435,52 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 }
 </style></head>
 
+<style>
+  .paper-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .paper-table caption {
+    caption-side: top;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .paper-table thead th {
+    padding: 10px 8px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+
+  .paper-table tbody td {
+    padding: 14px 10px;
+    vertical-align: middle;
+  }
+
+  .paper-table tbody tr {
+    border-bottom: 1px solid #999;
+  }
+
+  .paper-table tbody tr:last-child {
+    border-bottom: 2px solid #000;
+  }
+
+  .table-footnote {
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+
+	.paper-table .section-divider td {
+  border-top: 1.5px solid #000;
+}
+</style>
+
+	
 
     <body>
         <div id="top" style="position: relative; top: -100px;"></div>
@@ -490,14 +536,151 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
             <div id="intro">
                 <h2><a class="subtitle">Overview</a></h2>
 
-                <p align="justify">
-                    &ensp; We show DroFiT's speech enhancement demo in 3 different UAV (Drone) noise SNR settings of {-25, -15, -5} dB. 
-					<br>
-					 For drone noise data, we drove DJI Flip UAV [1] in the air to generate various types of noise. 
-					<br>
-					For speech dataset, clean utterances of male/female from the VoiceBank-DEMAND [2] corpus derived from VoiceBank/VCTK [3].
-					<br>
-                </p>
+				  <p style="text-align: justify;">
+				    &ensp; We show DroFiT's speech enhancement demo in 3 different UAV (Drone) noise SNR settings of {-25, -15, -5} dB.
+				  </p>
+				
+				  <p style="text-align: justify;">
+				    For drone noise data, we drove DJI Flip UAV [1] in the air to generate various types of noise.
+				  </p>
+				
+				  <p style="text-align: justify;">
+				    For speech dataset, clean utterances of male/female from the VoiceBank-DEMAND [2] corpus derived from VoiceBank/VCTK [3].
+				  </p>
+				
+						<table class="paper-table">
+							<caption>Dataset configuration for training, validation, test, and demo sets.</caption>
+
+						  <thead>
+						    <tr>
+						      <th>Module</th>
+						      <th>Speaker</th>
+						      <th>Allocation</th>
+						      <th>SNR / Noise*</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <td>Train</td>
+						      <td>
+						        Total 28 Speakers<br>
+						        (VoiceBank-DEMAND)
+						      </td>
+						      <td>
+						        Total 7,200<br>
+						        (≈257 per speaker)
+						      </td>
+						      <td>-25, -10, -15, -20, -25 dB</td>
+						    </tr>
+						
+						    <tr>
+						      <td>Validation</td>
+						      <td>Same as Train</td>
+						      <td>
+						        Total 800<br>
+						        (≈29 per speaker)
+						      </td>
+						      <td>-25, -10, -15, -20, -25 dB</td>
+						    </tr>
+						
+						    <tr>
+						      <td>Test</td>
+						      <td>
+						        2 Unseen speakers: p232, p257 <br>
+						        (1 Male / 1 Female – VCTK)
+						      </td>
+						      <td>
+						        Total 800<br>
+						        (135 per SNR)
+						      </td>
+						      <td>-25, -10, -15, -20, -25, -30 dB</td>
+						    </tr>
+							<tr>
+						      <td>Demo in this website</td>
+						      <td>
+						        4 Unseen Speakers <br>
+						        (2 Male / 2 Female – VCTK)
+						      </td>
+						      <td>
+								  
+						      </td>
+						      <td>-25, -15, -5 dB</td>
+						    </tr>
+					
+						  </tbody>
+						</table>
+						
+						<p class="table-footnote">
+						  * Noise segments were randomly sampled from 9000s recordings to mitigate temporal
+						  correlation, and mixtures were generated using PyRoomAcoustics.
+						</p>
+				  <p style="text-align: justify;">
+				    For transformer and TCN block parameters and values used for test & demo, please see the table below.
+				  </p>
+				
+						<table class="paper-table">
+						  <caption>Model hyperparameter configuration.</caption>
+						
+						  <thead>
+						    <tr>
+						      <th>Module</th>
+						      <th>Hyperparameter</th>
+						      <th>Value</th>
+						      <th>Description</th>
+						    </tr>
+						  </thead>
+						
+						  <tbody>
+						    <!-- Transformer block -->
+						    <tr>
+						      <td rowspan="4">Transformer<br>(MHA)</td>
+						      <td>Model Dim</td>
+						      <td>32</td>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <td># of Heads</td>
+						      <td>16</td>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <td># of Layers</td>
+						      <td>4</td>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <td>FFN Dim</td>
+						      <td>128</td>
+						      <td></td>
+						    </tr>
+						
+						    <!-- Separator between modules -->
+						    <tr class="section-divider">
+						      <td rowspan="4">TCN Block</td>
+						      <td>Kernel size</td>
+						      <td>3</td>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <td># of Layers</td>
+						      <td>3</td>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <td>Look-ahead</td>
+						      <td>200 ms</td>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <td>Receptive field</td>
+						      <td>15</td>
+						      <td></td>
+						    </tr>
+						  </tbody>
+						</table>
+
+
+				
 			</div>
 
 		<hr>
